@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Patient resources at SkyHigh Medical Centre — insurance & billing, new-patient forms, what to bring, and answers to frequently asked questions." />
+  <meta name="theme-color" content="#1577C2" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231577C2'/%3E%3Cpath d='M13.5 6h5v5.5H24v5h-5.5V22h-5v-5.5H8v-5h5.5z' fill='%23fff'/%3E%3Ccircle cx='24' cy='9' r='3' fill='%2313B7A4'/%3E%3C/svg%3E" />
+  <title>Patient Resources — SkyHigh Medical Centre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500;9..40,600;9..40,700;9..40,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="topbar"><div class="topbar__inner">
+    <div class="topbar__group">
+      <span class="topbar__item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+2348100996560">0810 099 6560</a></span>
+      <span class="topbar__item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Open 24 Hours · 7 Days a Week</span>
+    </div>
+    <div class="topbar__group"><span class="topbar__item topbar__item--emergency"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>24/7 Emergency: <a href="tel:+2348100996560">0810 099 6560</a></span></div>
+  </div></div>
+
+  <nav class="nav nav--scrolled" id="main-nav" data-transparent="false"><div class="nav__inner">
+    <a href="index.html" class="nav__logo nav__logo--chip" aria-label="SkyHigh Medical Centre — home"><img class="nav__logo-img" src="assets/logo.jpg" alt="SkyHigh Medical Centre" /></a>
+    <ul class="nav__links">
+      <li><a href="about.html" class="nav__link">About</a></li>
+      <li><a href="services.html" class="nav__link">Services</a></li>
+      <li><a href="doctors.html" class="nav__link">Doctors</a></li>
+      <li><a href="patient-resources.html" class="nav__link">Patient Resources</a></li>
+      <li><a href="health-tips.html" class="nav__link">Health Tips</a></li>
+      <li><a href="contact.html" class="nav__link">Contact</a></li>
+    </ul>
+    <div class="nav__actions">
+      <a href="tel:+2348100996560" class="btn btn--secondary btn--sm">Call Us</a>
+      <a href="book-appointment.html" class="btn btn--primary btn--sm">Book Appointment</a>
+      <button class="nav__menu-btn" id="menu-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div></nav>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <button class="mobile-nav__close" id="mobile-nav-close" aria-label="Close menu">✕</button>
+    <ul class="mobile-nav__links">
+      <li><a href="index.html" class="mobile-nav__link">Home</a></li>
+      <li><a href="about.html" class="mobile-nav__link">About</a></li>
+      <li><a href="services.html" class="mobile-nav__link">Services</a></li>
+      <li><a href="doctors.html" class="mobile-nav__link">Doctors</a></li>
+      <li><a href="patient-resources.html" class="mobile-nav__link">Patient Resources</a></li>
+      <li><a href="health-tips.html" class="mobile-nav__link">Health Tips</a></li>
+      <li><a href="contact.html" class="mobile-nav__link">Contact</a></li>
+      <li><a href="book-appointment.html" class="mobile-nav__link mobile-nav__link--cta">Book Appointment</a></li>
+    </ul>
+  </div>
+
+  <header class="page-hero">
+    <span class="page-hero__label">Patient Resources</span>
+    <h1 class="page-hero__title">Everything You Need Before Your Visit</h1>
+    <p class="page-hero__subtitle">Insurance details, forms to complete, what to bring, and answers to the questions we hear most.</p>
+    <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Patient Resources</span></div>
+  </header>
+
+  <main>
+    <!-- QUICK RESOURCE CARDS -->
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-3 reveal">
+          <div class="service-card"><div class="service-card__icon"><svg viewBox="0 0 24 24" stroke-width="2" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><h3 class="service-card__title">New Patient Forms</h3><p class="service-card__desc">Save time at check-in by completing your registration and history forms in advance.</p><a href="#" class="service-card__link">Download forms <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+          <div class="service-card"><div class="service-card__icon"><svg viewBox="0 0 24 24" stroke-width="2" fill="none"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div><h3 class="service-card__title">HMO & Billing</h3><p class="service-card__desc">See the HMOs we work with, payment options, and how to request an itemised receipt.</p><a href="#insurance" class="service-card__link">View details <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+          <div class="service-card"><div class="service-card__icon"><svg viewBox="0 0 24 24" stroke-width="2" fill="none"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div><h3 class="service-card__title">What to Bring</h3><p class="service-card__desc">A simple checklist so you arrive prepared for a smooth, efficient appointment.</p><a href="#checklist" class="service-card__link">See checklist <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSURANCE -->
+    <section class="section section--warm" id="insurance">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-header__label">HMO & Billing</span>
+          <h2 class="section-header__title">HMOs We Work With</h2>
+          <p class="section-header__desc">We are on the panel of most major HMOs in Nigeria. Don't see yours? Call us — we'll help you understand your options.</p>
+        </div>
+        <div class="logo-row reveal mb-12" style="justify-content:flex-start;">
+          <div class="logo-row__item">Hygeia HMO</div>
+          <div class="logo-row__item">Avon HMO</div>
+          <div class="logo-row__item">AXA Mansard</div>
+          <div class="logo-row__item">Leadway Health</div>
+          <div class="logo-row__item">Reliance HMO</div>
+          <div class="logo-row__item">Total Health Trust</div>
+          <div class="logo-row__item">Clearline HMO</div>
+          <div class="logo-row__item">NHIS</div>
+        </div>
+
+        <div class="form-card reveal" style="max-width:760px;">
+          <h3 style="margin-bottom:8px;">Self-Pay & Transparent Pricing</h3>
+          <p style="font-size:14px;color:var(--color-muted);margin-bottom:24px;">No HMO? No problem. Here are our standard self-pay rates for common visits — clear and upfront.</p>
+          <div class="price-list">
+            <div class="price-item"><div><div class="price-item__name">New Patient Consultation</div><div class="price-item__desc">Comprehensive first visit &amp; history</div></div><div class="price-item__value">₦15,000</div></div>
+            <div class="price-item"><div><div class="price-item__name">Routine Doctor's Visit</div><div class="price-item__desc">Returning patient, single concern</div></div><div class="price-item__value">₦8,000</div></div>
+            <div class="price-item"><div><div class="price-item__name">Telemedicine Visit</div><div class="price-item__desc">Secure video consultation from home</div></div><div class="price-item__value">₦5,000</div></div>
+            <div class="price-item"><div><div class="price-item__name">Antenatal Registration</div><div class="price-item__desc">Booking visit &amp; first checks</div></div><div class="price-item__value">From ₦25,000</div></div>
+            <div class="price-item"><div><div class="price-item__name">Basic Lab Panel</div><div class="price-item__desc">Standard blood work (FBC, malaria, etc.)</div></div><div class="price-item__value">From ₦7,500</div></div>
+          </div>
+          <p class="form-hint" style="margin-top:16px;">Prices are estimates and may vary based on complexity. Ask our front desk for a personalised quote.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHECKLIST -->
+    <section class="section" id="checklist">
+      <div class="container container--narrow">
+        <div class="section-header section-header--center reveal">
+          <span class="section-header__label">Before You Arrive</span>
+          <h2 class="section-header__title">What to Bring to Your Appointment</h2>
+        </div>
+        <div class="reveal" style="background:var(--color-accent-subtle);border-radius:24px;padding:40px;">
+          <ul style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span style="width:24px;height:24px;background:var(--color-accent);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:13px;flex-shrink:0;">✓</span><span style="font-size:15px;color:var(--color-text-soft);">Valid ID (driver's licence, NIN slip or passport)</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span style="width:24px;height:24px;background:var(--color-accent);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:13px;flex-shrink:0;">✓</span><span style="font-size:15px;color:var(--color-text-soft);">HMO card (if you're using an HMO)</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span style="width:24px;height:24px;background:var(--color-accent);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:13px;flex-shrink:0;">✓</span><span style="font-size:15px;color:var(--color-text-soft);">List of current medications</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span style="width:24px;height:24px;background:var(--color-accent);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:13px;flex-shrink:0;">✓</span><span style="font-size:15px;color:var(--color-text-soft);">Completed new-patient forms</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span style="width:24px;height:24px;background:var(--color-accent);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:13px;flex-shrink:0;">✓</span><span style="font-size:15px;color:var(--color-text-soft);">Relevant medical records or referrals</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span style="width:24px;height:24px;background:var(--color-accent);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:13px;flex-shrink:0;">✓</span><span style="font-size:15px;color:var(--color-text-soft);">A list of questions for your doctor</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--warm" id="faq">
+      <div class="container container--narrow">
+        <div class="section-header section-header--center reveal">
+          <span class="section-header__label">FAQ</span>
+          <h2 class="section-header__title">Frequently Asked Questions</h2>
+        </div>
+        <div class="reveal">
+          <div class="accordion__item"><button class="accordion__btn">How do I book an appointment?</button><div class="accordion__panel"><div class="accordion__panel-inner">The fastest way is our <a href="book-appointment.html" style="color:var(--color-accent);font-weight:600;">online booking tool</a> — choose a service, doctor, and time in under two minutes. You can also call us at 0810 099 6560 during opening hours.</div></div></div>
+          <div class="accordion__item"><button class="accordion__btn">Are you really open 24 hours?</button><div class="accordion__panel"><div class="accordion__panel-inner">Yes — our Emergency unit, ICU and wards never close. Walk-ins are welcome any hour of the day or night, weekends and public holidays included. For non-urgent clinics, booking ahead helps reduce your wait.</div></div></div>
+          <div class="accordion__item"><button class="accordion__btn">Which HMOs do you accept?</button><div class="accordion__panel"><div class="accordion__panel-inner">We are on the panel of most major HMOs including Hygeia, Avon, AXA Mansard, Leadway Health, Reliance, Total Health Trust, Clearline and NHIS. See the full list in our <a href="#insurance" style="color:var(--color-accent);font-weight:600;">HMO section</a> above, or call to confirm your specific plan.</div></div></div>
+          <div class="accordion__item"><button class="accordion__btn">Can I see a doctor by video?</button><div class="accordion__panel"><div class="accordion__panel-inner">Absolutely. Our telemedicine service lets you consult a provider by secure video for many common concerns, prescription refills, and follow-ups. Select "Virtual Visit" when booking.</div></div></div>
+          <div class="accordion__item"><button class="accordion__btn">How do I get my test results?</button><div class="accordion__panel"><div class="accordion__panel-inner">Results are posted to your secure patient portal as soon as they're ready, and your doctor will reach out to discuss anything that needs attention. Most lab results are available within 24–72 hours.</div></div></div>
+          <div class="accordion__item"><button class="accordion__btn">What is your cancellation policy?</button><div class="accordion__panel"><div class="accordion__panel-inner">You can reschedule or cancel any appointment free of charge up to 24 hours beforehand. Late cancellations may be subject to a small fee. Manage your appointment from the confirmation email or by calling us.</div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:var(--color-accent);padding:72px 0;text-align:center;">
+      <div class="container"><div class="reveal" style="max-width:620px;margin:0 auto;">
+        <h2 style="color:white;margin-bottom:16px;">Still Have Questions?</h2>
+        <p style="color:rgba(255,255,255,0.92);font-size:18px;margin-bottom:32px;">Our friendly team is here to help. Reach out and we'll get you the answers you need.</p>
+        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn--white btn--lg">Contact Us</a>
+          <a href="book-appointment.html" class="btn btn--ghost btn--lg">Book Appointment</a>
+        </div>
+      </div></div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo footer__logo--chip"><img class="footer__logo-img" src="assets/logo.jpg" alt="SkyHigh Medical Centre" /></a>
+        <p class="footer__tagline">Compassionate 24/7 healthcare in the heart of Magodo, Lagos.</p>
+        <div class="footer__hours">
+          <div class="footer__hours-row"><span>Monday – Sunday</span><span>Open 24 Hours</span></div>
+          <div class="footer__hours-row"><span>Emergency &amp; ICU</span><span>Always Open</span></div>
+          <div class="footer__hours-row"><span>Public Holidays</span><span>Open 24 Hours</span></div>
+        </div>
+      </div>
+      <div><h4 class="footer__col-title">Services</h4><ul class="footer__links">
+        <li><a href="services.html" class="footer__link">24/7 Emergency &amp; ICU</a></li>
+        <li><a href="services.html" class="footer__link">Maternity &amp; Antenatal</a></li>
+        <li><a href="services.html" class="footer__link">Obstetrics &amp; Gynaecology</a></li>
+        <li><a href="services.html" class="footer__link">General Surgery</a></li>
+        <li><a href="services.html" class="footer__link">Paediatrics &amp; Immunisation</a></li>
+        <li><a href="services.html" class="footer__link">Laboratory &amp; Telemedicine</a></li>
+      </ul></div>
+      <div><h4 class="footer__col-title">For Patients</h4><ul class="footer__links">
+        <li><a href="book-appointment.html" class="footer__link">Book Appointment</a></li>
+        <li><a href="patient-resources.html" class="footer__link">Patient Resources</a></li>
+        <li><a href="patient-resources.html#insurance" class="footer__link">HMO &amp; Billing</a></li>
+        <li><a href="patient-resources.html#faq" class="footer__link">FAQ</a></li>
+        <li><a href="contact.html" class="footer__link">Contact Us</a></li>
+      </ul></div>
+      <div><h4 class="footer__col-title">Find Us</h4><ul class="footer__links">
+        <li><span class="footer__link" style="cursor:default;color:rgba(255,255,255,0.6);">5b, Adekunle Banjo Avenue<br>Magodo Phase 2, Lagos State</span></li>
+        <li style="margin-top:8px;"><a href="tel:+2348100996560" class="footer__link">0810 099 6560</a></li>
+        <li><a href="tel:+2348027270167" class="footer__link">0802 727 0167</a></li>
+        <li><a href="mailto:skyhighmedicalcentre0@gmail.com" class="footer__link">skyhighmedicalcentre0@gmail.com</a></li>
+        <li style="margin-top:12px;"><a href="https://maps.google.com/?q=SkyHigh+Medical+Centre+Adekunle+Banjo+Avenue+Magodo+Phase+2+Lagos" target="_blank" rel="noopener" class="footer__link" style="color:var(--color-accent-light);">Get Directions →</a></li>
+      </ul></div>
+    </div>
+    <div class="footer__bottom"><p>© 2026 SkyHigh Medical Centre · Magodo, Lagos. All rights reserved.</p><div style="display:flex;gap:16px;"><a href="#" class="footer__link" style="font-size:13px;">Privacy</a><a href="#" class="footer__link" style="font-size:13px;">Terms</a><a href="#" class="footer__link" style="font-size:13px;">Patient Charter</a></div></div>
+  </div></footer>
+
+  <a href="https://wa.me/2348089749877" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

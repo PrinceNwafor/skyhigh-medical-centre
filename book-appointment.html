@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Book your appointment at SkyHigh Medical Centre online in four simple steps. Choose a service, doctor, and time — confirmed instantly." />
+  <meta name="theme-color" content="#1577C2" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231577C2'/%3E%3Cpath d='M13.5 6h5v5.5H24v5h-5.5V22h-5v-5.5H8v-5h5.5z' fill='%23fff'/%3E%3Ccircle cx='24' cy='9' r='3' fill='%2313B7A4'/%3E%3C/svg%3E" />
+  <title>Book an Appointment — SkyHigh Medical Centre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500;9..40,600;9..40,700;9..40,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- TOP UTILITY BAR -->
+  <div class="topbar">
+    <div class="topbar__inner">
+      <div class="topbar__group">
+        <span class="topbar__item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+2348100996560">0810 099 6560</a></span>
+        <span class="topbar__item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Open 24 Hours · 7 Days a Week</span>
+      </div>
+      <div class="topbar__group">
+        <span class="topbar__item topbar__item--emergency"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>24/7 Emergency: <a href="tel:+2348100996560">0810 099 6560</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="nav nav--scrolled" id="main-nav" data-transparent="false">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo nav__logo--chip" aria-label="SkyHigh Medical Centre — home"><img class="nav__logo-img" src="assets/logo.jpg" alt="SkyHigh Medical Centre" /></a>
+      <ul class="nav__links">
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="services.html" class="nav__link">Services</a></li>
+        <li><a href="doctors.html" class="nav__link">Doctors</a></li>
+        <li><a href="patient-resources.html" class="nav__link">Patient Resources</a></li>
+        <li><a href="health-tips.html" class="nav__link">Health Tips</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="tel:+2348100996560" class="btn btn--secondary btn--sm">Call Us</a>
+        <a href="book-appointment.html" class="btn btn--primary btn--sm">Book Appointment</a>
+        <button class="nav__menu-btn" id="menu-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobile-nav">
+    <button class="mobile-nav__close" id="mobile-nav-close" aria-label="Close menu">✕</button>
+    <ul class="mobile-nav__links">
+      <li><a href="index.html" class="mobile-nav__link">Home</a></li>
+      <li><a href="about.html" class="mobile-nav__link">About</a></li>
+      <li><a href="services.html" class="mobile-nav__link">Services</a></li>
+      <li><a href="doctors.html" class="mobile-nav__link">Doctors</a></li>
+      <li><a href="patient-resources.html" class="mobile-nav__link">Patient Resources</a></li>
+      <li><a href="health-tips.html" class="mobile-nav__link">Health Tips</a></li>
+      <li><a href="contact.html" class="mobile-nav__link">Contact</a></li>
+      <li><a href="book-appointment.html" class="mobile-nav__link mobile-nav__link--cta">Book Appointment</a></li>
+    </ul>
+  </div>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero">
+    <span class="page-hero__label">Online Booking</span>
+    <h1 class="page-hero__title">Book Your Appointment</h1>
+    <p class="page-hero__subtitle">Four quick steps and you're done. Get instant confirmation by email and SMS — no waiting on hold.</p>
+    <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Book Appointment</span></div>
+  </header>
+
+  <main>
+    <section class="section" style="padding-top:var(--space-16);">
+      <div class="container container--narrow">
+
+        <!-- ================= BOOKING WIDGET (signature) ================= -->
+        <div class="booking">
+
+          <!-- Stepper -->
+          <div class="booking__steps">
+            <div class="booking__step booking__step--active">
+              <div class="booking__step-num">1</div>
+              <div><div class="booking__step-label">Service</div><div class="booking__step-sub">What you need</div></div>
+            </div>
+            <div class="booking__step">
+              <div class="booking__step-num">2</div>
+              <div><div class="booking__step-label">Doctor</div><div class="booking__step-sub">Your provider</div></div>
+            </div>
+            <div class="booking__step">
+              <div class="booking__step-num">3</div>
+              <div><div class="booking__step-label">Date & Time</div><div class="booking__step-sub">Pick a slot</div></div>
+            </div>
+            <div class="booking__step">
+              <div class="booking__step-num">4</div>
+              <div><div class="booking__step-label">Your Details</div><div class="booking__step-sub">About you</div></div>
+            </div>
+            <div class="booking__step">
+              <div class="booking__step-num">5</div>
+              <div><div class="booking__step-label">Confirm</div><div class="booking__step-sub">Review</div></div>
+            </div>
+          </div>
+
+          <!-- Body -->
+          <div class="booking__body">
+
+            <!-- STEP 1: SERVICE -->
+            <div class="booking__panel booking__panel--active">
+              <h2 class="booking__panel-title">What kind of care do you need?</h2>
+              <p class="booking__panel-desc">Select a service to get started.</p>
+              <div class="option-grid">
+                <button type="button" class="option-tile" data-group="service" data-value="Family Medicine / GOPD">
+                  <span class="option-tile__icon"><svg viewBox="0 0 24 24" stroke-width="2" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+                  <span><span class="option-tile__title">Family Medicine / GOPD</span><br><span class="option-tile__sub">General consultations &amp; check-ups</span></span>
+                </button>
+                <button type="button" class="option-tile" data-group="service" data-value="Maternity & Antenatal">
+                  <span class="option-tile__icon"><svg viewBox="0 0 24 24" stroke-width="2" fill="none"><path d="M12 21s-8-4.5-8-11a5 5 0 019-3 5 5 0 019 3c0 6.5-8 11-8 11z"/></svg></span>
+                  <span><span class="option-tile__title">Maternity &amp; Antenatal</span><br><span class="option-tile__sub">Pregnancy &amp; mother care</span></span>
+                </button>
+                <button type="button" class="option-tile" data-group="service" data-value="Obstetrics & Gynaecology">
+                  <span class="option-tile__icon"><svg viewBox="0 0 24 24" stroke-width="2" fill="none"><circle cx="12" cy="8" r="6"/><path d="M12 14v8M9 19h6"/></svg></span>
+                  <span><span class="option-tile__title">Obstetrics &amp; Gynaecology</span><br><span class="option-tile__sub">Women's health &amp; screening</span></span>
+                </button>
+                <button type="button" class="option-tile" data-group="service" data-value="Paediatrics & Immunisation">
+                  <span class="option-tile__icon"><svg viewBox="0 0 24 24" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"/><path d="M9 12h.01M15 12h.01M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"/></svg></span>
+                  <span><span class="option-tile__title">Paediatrics &amp; Immunisation</span><br><span class="option-tile__sub">Care for babies &amp; children</span></span>
+                </button>
+                <button type="button" class="option-tile" data-group="service" data-value="General Surgery (Consultation)">
+                  <span class="option-tile__icon"><svg viewBox="0 0 24 24" stroke-width="2" fill="none"><path d="M14.5 3.5l6 6L9 21l-6 .5.5-6z"/><path d="M11 6l7 7"/></svg></span>
+                  <span><span class="option-tile__title">General Surgery</span><br><span class="option-tile__sub">Surgical consultation</span></span>
+                </button>
+                <button type="button" class="option-tile" data-group="service" data-value="Laboratory & Diagnostics">
+                  <span class="option-tile__icon"><svg viewBox="0 0 24 24" stroke-width="2" fill="none"><path d="M10 2v7.31M14 9.3V2M8.5 2h7M14 9.3a6.5 6.5 0 11-4 0"/></svg></span>
+                  <span><span class="option-tile__title">Laboratory &amp; Diagnostics</span><br><span class="option-tile__sub">Tests, scans &amp; imaging</span></span>
+                </button>
+                <button type="button" class="option-tile" data-group="service" data-value="Dialysis Session">
+                  <span class="option-tile__icon"><svg viewBox="0 0 24 24" stroke-width="2" fill="none"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg></span>
+                  <span><span class="option-tile__title">Dialysis Session</span><br><span class="option-tile__sub">Renal / haemodialysis care</span></span>
+                </button>
+                <button type="button" class="option-tile" data-group="service" data-value="Telemedicine (Virtual Visit)">
+                  <span class="option-tile__icon"><svg viewBox="0 0 24 24" stroke-width="2" fill="none"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></span>
+                  <span><span class="option-tile__title">Telemedicine</span><br><span class="option-tile__sub">Consult by secure video</span></span>
+                </button>
+              </div>
+              <div class="booking__nav">
+                <a href="index.html" class="btn btn--secondary">Cancel</a>
+                <button type="button" class="btn btn--primary" data-booking-next>Continue →</button>
+              </div>
+            </div>
+
+            <!-- STEP 2: DOCTOR -->
+            <div class="booking__panel">
+              <h2 class="booking__panel-title">Choose your doctor</h2>
+              <p class="booking__panel-desc">Pick a preferred provider, or let us match you with the next available.</p>
+              <div class="option-grid">
+                <button type="button" class="option-tile" data-group="doctor" data-value="No preference (next available)">
+                  <span class="option-tile__icon"><svg viewBox="0 0 24 24" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg></span>
+                  <span><span class="option-tile__title">No preference</span><br><span class="option-tile__sub">Next available doctor</span></span>
+                </button>
+                <button type="button" class="option-tile" data-group="doctor" data-value="Dr. Tunde Bakare">
+                  <img class="option-tile__avatar" src="assets/doctor-3.jpg" alt="" loading="lazy" />
+                  <span><span class="option-tile__title">Dr. Tunde Bakare</span><br><span class="option-tile__sub">Medical Director · Family Physician</span></span>
+                </button>
+                <button type="button" class="option-tile" data-group="doctor" data-value="Dr. Adaeze Okafor">
+                  <img class="option-tile__avatar" src="assets/doctor-1.jpg" alt="" loading="lazy" />
+                  <span><span class="option-tile__title">Dr. Adaeze Okafor</span><br><span class="option-tile__sub">Obstetrician &amp; Gynaecologist</span></span>
+                </button>
+                <button type="button" class="option-tile" data-group="doctor" data-value="Dr. Aisha Bello">
+                  <img class="option-tile__avatar" src="assets/doctor-2.jpg" alt="" loading="lazy" />
+                  <span><span class="option-tile__title">Dr. Aisha Bello</span><br><span class="option-tile__sub">Consultant Paediatrician</span></span>
+                </button>
+                <button type="button" class="option-tile" data-group="doctor" data-value="Dr. Emeka Nwosu">
+                  <img class="option-tile__avatar" src="assets/doctor-4.jpg" alt="" loading="lazy" />
+                  <span><span class="option-tile__title">Dr. Emeka Nwosu</span><br><span class="option-tile__sub">Consultant General Surgeon</span></span>
+                </button>
+                <button type="button" class="option-tile" data-group="doctor" data-value="Dr. Ibrahim Sanni">
+                  <img class="option-tile__avatar" src="assets/doctor-5.jpg" alt="" loading="lazy" />
+                  <span><span class="option-tile__title">Dr. Ibrahim Sanni</span><br><span class="option-tile__sub">Internal Medicine · ICU</span></span>
+                </button>
+              </div>
+              <div class="booking__nav">
+                <button type="button" class="btn btn--secondary" data-booking-prev>← Back</button>
+                <button type="button" class="btn btn--primary" data-booking-next>Continue →</button>
+              </div>
+            </div>
+
+            <!-- STEP 3: DATE & TIME -->
+            <div class="booking__panel">
+              <h2 class="booking__panel-title">Pick a date & time</h2>
+              <p class="booking__panel-desc">Select an available day, then choose a time slot.</p>
+
+              <label class="form-label">Available dates</label>
+              <div class="date-scroller"><!-- dates injected by JS --></div>
+
+              <div data-time-wrap style="display:none;">
+                <label class="form-label">Available times</label>
+                <div class="time-grid">
+                  <button type="button" class="time-slot">8:30 AM</button>
+                  <button type="button" class="time-slot">9:00 AM</button>
+                  <button type="button" class="time-slot time-slot--unavailable">9:30 AM</button>
+                  <button type="button" class="time-slot">10:15 AM</button>
+                  <button type="button" class="time-slot">11:00 AM</button>
+                  <button type="button" class="time-slot time-slot--unavailable">11:45 AM</button>
+                  <button type="button" class="time-slot">1:30 PM</button>
+                  <button type="button" class="time-slot">2:15 PM</button>
+                  <button type="button" class="time-slot">3:00 PM</button>
+                  <button type="button" class="time-slot">4:30 PM</button>
+                  <button type="button" class="time-slot">5:15 PM</button>
+                  <button type="button" class="time-slot">6:00 PM</button>
+                </div>
+              </div>
+
+              <div class="booking__nav">
+                <button type="button" class="btn btn--secondary" data-booking-prev>← Back</button>
+                <button type="button" class="btn btn--primary" data-booking-next>Continue →</button>
+              </div>
+            </div>
+
+            <!-- STEP 4: DETAILS -->
+            <div class="booking__panel">
+              <h2 class="booking__panel-title">Tell us about you</h2>
+              <p class="booking__panel-desc">We'll use this to confirm your appointment and prepare for your visit.</p>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="bk-name">Full Name *</label>
+                  <input type="text" id="bk-name" class="form-input" placeholder="Jane Doe" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="bk-phone">Phone Number *</label>
+                  <input type="tel" id="bk-phone" class="form-input" placeholder="0810 099 6560" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="bk-email">Email Address *</label>
+                <input type="email" id="bk-email" class="form-input" placeholder="jane@email.com" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Are you a new patient? *</label>
+                <div style="display:flex;gap:24px;margin-top:8px;">
+                  <label class="form-check"><input type="radio" name="bk-newpatient" value="New patient" /><span class="form-check__label">New patient</span></label>
+                  <label class="form-check"><input type="radio" name="bk-newpatient" value="Returning patient" /><span class="form-check__label">Returning patient</span></label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="bk-notes">Reason for visit (optional)</label>
+                <textarea id="bk-notes" class="form-textarea" placeholder="Briefly describe your symptoms or reason for the appointment..."></textarea>
+              </div>
+
+              <div class="booking__nav">
+                <button type="button" class="btn btn--secondary" data-booking-prev>← Back</button>
+                <button type="button" class="btn btn--primary" data-booking-next>Review Booking →</button>
+              </div>
+            </div>
+
+            <!-- STEP 5: CONFIRM -->
+            <div class="booking__panel">
+              <h2 class="booking__panel-title">Review & confirm</h2>
+              <p class="booking__panel-desc">Please check your appointment details before confirming.</p>
+
+              <div class="booking__summary">
+                <div class="booking__summary-row"><span>Service</span><span data-sum-service>—</span></div>
+                <div class="booking__summary-row"><span>Doctor</span><span data-sum-doctor>—</span></div>
+                <div class="booking__summary-row"><span>Date</span><span data-sum-date>—</span></div>
+                <div class="booking__summary-row"><span>Time</span><span data-sum-time>—</span></div>
+                <div class="booking__summary-row"><span>Name</span><span data-sum-name>—</span></div>
+                <div class="booking__summary-row"><span>Phone</span><span data-sum-phone>—</span></div>
+                <div class="booking__summary-row"><span>Email</span><span data-sum-email>—</span></div>
+                <div class="booking__summary-row"><span>Patient type</span><span data-sum-patient>—</span></div>
+              </div>
+
+              <label class="form-check" style="margin-bottom:8px;">
+                <input type="checkbox" checked />
+                <span class="form-check__label">I agree to the clinic's privacy policy and consent to be contacted about this appointment.</span>
+              </label>
+
+              <div class="booking__nav">
+                <button type="button" class="btn btn--secondary" data-booking-prev>← Back</button>
+                <button type="button" class="btn btn--primary btn--lg" data-booking-confirm>Confirm Appointment ✓</button>
+              </div>
+            </div>
+
+          </div><!-- /booking__body -->
+
+          <!-- SUCCESS STATE -->
+          <div class="booking__success">
+            <div class="booking__success-icon">
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            </div>
+            <h2 style="margin-bottom:12px;">You're all booked! 🎉</h2>
+            <p style="max-width:460px;margin:0 auto 24px;color:var(--color-text-soft);">
+              A confirmation has been sent to your email and phone. We look forward to seeing you.
+              Need to make a change? Call us at <a href="tel:+2348100996560" style="color:var(--color-accent);font-weight:600;">0810 099 6560</a>.
+            </p>
+            <div class="booking__summary" style="max-width:460px;margin:0 auto 28px;text-align:left;">
+              <div class="booking__summary-row"><span>Service</span><span data-sum-service>—</span></div>
+              <div class="booking__summary-row"><span>Doctor</span><span data-sum-doctor>—</span></div>
+              <div class="booking__summary-row"><span>Date</span><span data-sum-date>—</span></div>
+              <div class="booking__summary-row"><span>Time</span><span data-sum-time>—</span></div>
+            </div>
+            <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+              <a href="index.html" class="btn btn--secondary">Back to Home</a>
+              <a href="patient-resources.html" class="btn btn--primary">Prepare for Your Visit</a>
+            </div>
+          </div>
+
+        </div><!-- /booking -->
+
+        <!-- Reassurance below widget -->
+        <div class="grid grid-3 mt-12 reveal">
+          <div class="feature"><div class="feature__icon"><svg viewBox="0 0 24 24" stroke-width="2" fill="none"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div><div><div class="feature__title">Private & secure</div><div class="feature__desc">Your information is encrypted and HIPAA-compliant.</div></div></div>
+          <div class="feature"><div class="feature__icon"><svg viewBox="0 0 24 24" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div><div><div class="feature__title">Instant confirmation</div><div class="feature__desc">Get an email & SMS the moment you book.</div></div></div>
+          <div class="feature"><div class="feature__icon"><svg viewBox="0 0 24 24" stroke-width="2" fill="none"><path d="M3 12a9 9 0 1018 0 9 9 0 00-18 0z"/><path d="M3 12h4l2 5 4-10 2 5h4"/></svg></div><div><div class="feature__title">Easy to reschedule</div><div class="feature__desc">Change or cancel anytime, no penalty.</div></div></div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo footer__logo--chip"><img class="footer__logo-img" src="assets/logo.jpg" alt="SkyHigh Medical Centre" /></a>
+          <p class="footer__tagline">Compassionate 24/7 healthcare in the heart of Magodo, Lagos. Same-day appointments, trusted doctors, and care that puts you first.</p>
+          <div class="footer__hours">
+            <div class="footer__hours-row"><span>Monday – Sunday</span><span>Open 24 Hours</span></div>
+            <div class="footer__hours-row"><span>Emergency &amp; ICU</span><span>Always Open</span></div>
+            <div class="footer__hours-row"><span>Public Holidays</span><span>Open 24 Hours</span></div>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Services</h4>
+          <ul class="footer__links">
+            <li><a href="services.html" class="footer__link">24/7 Emergency &amp; ICU</a></li>
+        <li><a href="services.html" class="footer__link">Maternity &amp; Antenatal</a></li>
+        <li><a href="services.html" class="footer__link">Obstetrics &amp; Gynaecology</a></li>
+        <li><a href="services.html" class="footer__link">General Surgery</a></li>
+        <li><a href="services.html" class="footer__link">Paediatrics &amp; Immunisation</a></li>
+        <li><a href="services.html" class="footer__link">Laboratory &amp; Telemedicine</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__col-title">For Patients</h4>
+          <ul class="footer__links">
+            <li><a href="book-appointment.html" class="footer__link">Book Appointment</a></li>
+            <li><a href="patient-resources.html" class="footer__link">Patient Resources</a></li>
+            <li><a href="patient-resources.html#insurance" class="footer__link">HMO &amp; Billing</a></li>
+        <li><a href="patient-resources.html#faq" class="footer__link">FAQ</a></li>
+        <li><a href="contact.html" class="footer__link">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Find Us</h4>
+          <ul class="footer__links">
+            <li><span class="footer__link" style="cursor:default;color:rgba(255,255,255,0.6);">5b, Adekunle Banjo Avenue<br>Magodo Phase 2, Lagos State</span></li>
+            <li style="margin-top:8px;"><a href="tel:+2348100996560" class="footer__link">0810 099 6560</a></li>
+        <li><a href="tel:+2348027270167" class="footer__link">0802 727 0167</a></li>
+        <li><a href="mailto:skyhighmedicalcentre0@gmail.com" class="footer__link">skyhighmedicalcentre0@gmail.com</a></li>
+        <li style="margin-top:12px;"><a href="https://maps.google.com/?q=SkyHigh+Medical+Centre+Adekunle+Banjo+Avenue+Magodo+Phase+2+Lagos" target="_blank" rel="noopener" class="footer__link" style="color:var(--color-accent-light);">Get Directions →</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 SkyHigh Medical Centre · Magodo, Lagos. All rights reserved.</p>
+        <div style="display:flex;gap:16px;"><a href="#" class="footer__link" style="font-size:13px;">Privacy</a><a href="#" class="footer__link" style="font-size:13px;">Terms</a><a href="#" class="footer__link" style="font-size:13px;">Patient Charter</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/2348089749877" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

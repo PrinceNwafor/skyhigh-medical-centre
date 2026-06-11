@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Health tips, wellness advice, and clinic news from the doctors at SkyHigh Medical Centre." />
+  <meta name="theme-color" content="#1577C2" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231577C2'/%3E%3Cpath d='M13.5 6h5v5.5H24v5h-5.5V22h-5v-5.5H8v-5h5.5z' fill='%23fff'/%3E%3Ccircle cx='24' cy='9' r='3' fill='%2313B7A4'/%3E%3C/svg%3E" />
+  <title>Health Tips & News — SkyHigh Medical Centre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500;9..40,600;9..40,700;9..40,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="topbar"><div class="topbar__inner">
+    <div class="topbar__group">
+      <span class="topbar__item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+2348100996560">0810 099 6560</a></span>
+      <span class="topbar__item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Open 24 Hours · 7 Days a Week</span>
+    </div>
+    <div class="topbar__group"><span class="topbar__item topbar__item--emergency"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>24/7 Emergency: <a href="tel:+2348100996560">0810 099 6560</a></span></div>
+  </div></div>
+
+  <nav class="nav nav--scrolled" id="main-nav" data-transparent="false"><div class="nav__inner">
+    <a href="index.html" class="nav__logo nav__logo--chip" aria-label="SkyHigh Medical Centre — home"><img class="nav__logo-img" src="assets/logo.jpg" alt="SkyHigh Medical Centre" /></a>
+    <ul class="nav__links">
+      <li><a href="about.html" class="nav__link">About</a></li>
+      <li><a href="services.html" class="nav__link">Services</a></li>
+      <li><a href="doctors.html" class="nav__link">Doctors</a></li>
+      <li><a href="patient-resources.html" class="nav__link">Patient Resources</a></li>
+      <li><a href="health-tips.html" class="nav__link">Health Tips</a></li>
+      <li><a href="contact.html" class="nav__link">Contact</a></li>
+    </ul>
+    <div class="nav__actions">
+      <a href="tel:+2348100996560" class="btn btn--secondary btn--sm">Call Us</a>
+      <a href="book-appointment.html" class="btn btn--primary btn--sm">Book Appointment</a>
+      <button class="nav__menu-btn" id="menu-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div></nav>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <button class="mobile-nav__close" id="mobile-nav-close" aria-label="Close menu">✕</button>
+    <ul class="mobile-nav__links">
+      <li><a href="index.html" class="mobile-nav__link">Home</a></li>
+      <li><a href="about.html" class="mobile-nav__link">About</a></li>
+      <li><a href="services.html" class="mobile-nav__link">Services</a></li>
+      <li><a href="doctors.html" class="mobile-nav__link">Doctors</a></li>
+      <li><a href="patient-resources.html" class="mobile-nav__link">Patient Resources</a></li>
+      <li><a href="health-tips.html" class="mobile-nav__link">Health Tips</a></li>
+      <li><a href="contact.html" class="mobile-nav__link">Contact</a></li>
+      <li><a href="book-appointment.html" class="mobile-nav__link mobile-nav__link--cta">Book Appointment</a></li>
+    </ul>
+  </div>
+
+  <header class="page-hero">
+    <span class="page-hero__label">Health Tips & News</span>
+    <h1 class="page-hero__title">Wellness Advice from Our Doctors</h1>
+    <p class="page-hero__subtitle">Practical, trustworthy health information written by the providers who care for you.</p>
+    <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Health Tips</span></div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+
+        <!-- Search + filter -->
+        <div class="reveal" style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-bottom:40px;">
+          <div style="position:relative;flex:1;min-width:260px;max-width:420px;">
+            <input type="text" id="article-search" class="form-input" placeholder="Search articles..." style="padding-left:44px;" />
+            <svg style="position:absolute;left:14px;top:50%;transform:translateY(-50%);width:18px;height:18px;stroke:var(--color-muted);fill:none;" viewBox="0 0 24 24" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <button class="btn btn--primary btn--sm" data-filter="all">All</button>
+            <button class="btn btn--secondary btn--sm" data-filter="prevention">Prevention</button>
+            <button class="btn btn--secondary btn--sm" data-filter="women">Women's Health</button>
+            <button class="btn btn--secondary btn--sm" data-filter="wellness">Wellness</button>
+            <button class="btn btn--secondary btn--sm" data-filter="care">24/7 Care</button>
+          </div>
+        </div>
+
+        <div class="grid grid-3 reveal">
+          <a href="#" class="article-card" data-category="prevention"><div class="article-card__thumb"><img data-fade src="assets/tip-hypertension.jpg" alt="Blood pressure monitor and heart" loading="lazy" /><span class="article-card__tag">Prevention</span></div><div class="article-card__body"><div class="article-card__meta"><span>May 17, 2026</span><span>5 min read</span></div><div class="article-card__title">Hypertension: The Silent Killer You Can Beat</div><p class="article-card__excerpt">High blood pressure often shows no symptoms — here's how a simple check at SkyHigh can protect your heart.</p></div></a>
+          <a href="#" class="article-card" data-category="women"><div class="article-card__thumb"><img data-fade src="assets/tip-cervical.jpg" alt="Cervical health awareness" loading="lazy" /><span class="article-card__tag">Women's Health</span></div><div class="article-card__body"><div class="article-card__meta"><span>Apr 22, 2026</span><span>4 min read</span></div><div class="article-card__title">Cervical Health: Why Every Woman Should Screen</div><p class="article-card__excerpt">A few minutes of screening today can prevent serious illness tomorrow. What every Lagos woman should know.</p></div></a>
+          <a href="#" class="article-card" data-category="women"><div class="article-card__thumb"><img data-fade src="assets/tip-breast.jpg" alt="Breast cancer awareness ribbon" loading="lazy" /><span class="article-card__tag">Prevention</span></div><div class="article-card__body"><div class="article-card__meta"><span>Apr 8, 2026</span><span>4 min read</span></div><div class="article-card__title">Breast Self-Checks: A 5-Minute Habit That Saves Lives</div><p class="article-card__excerpt">Learn the simple monthly self-exam — and book your free clinical breast screening with our team.</p></div></a>
+          <a href="#" class="article-card" data-category="wellness"><div class="article-card__thumb"><img data-fade src="assets/telemedicine.jpg" alt="Telemedicine consultation from home" loading="lazy" /><span class="article-card__tag">Wellness</span></div><div class="article-card__body"><div class="article-card__meta"><span>Mar 30, 2026</span><span>3 min read</span></div><div class="article-card__title">See a Doctor From Home with Telemedicine</div><p class="article-card__excerpt">No queues, no travel. Speak to a qualified SkyHigh doctor from the comfort of your home — here's how it works.</p></div></a>
+          <a href="#" class="article-card" data-category="care"><div class="article-card__thumb"><img data-fade src="assets/hero.jpg" alt="SkyHigh Medical Centre care" loading="lazy" /><span class="article-card__tag">Emergency</span></div><div class="article-card__body"><div class="article-card__meta"><span>Mar 15, 2026</span><span>6 min read</span></div><div class="article-card__title">When Is It a Real Emergency? Know the Warning Signs</div><p class="article-card__excerpt">Chest pain, trouble breathing, severe bleeding — the symptoms that mean you should come straight in, any hour.</p></div></a>
+          <a href="#" class="article-card" data-category="care"><div class="article-card__thumb"><img data-fade src="assets/team.jpg" alt="SkyHigh nursing team" loading="lazy" /><span class="article-card__tag">24/7 Care</span></div><div class="article-card__body"><div class="article-card__meta"><span>Feb 28, 2026</span><span>5 min read</span></div><div class="article-card__title">Meet the Nurses Who Never Sleep</div><p class="article-card__excerpt">Behind every heartbeat at our ICU and wards is a team on call around the clock. A look at 24/7 care at SkyHigh.</p></div></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="section section--warm">
+      <div class="container container--narrow">
+        <div class="form-card reveal" style="text-align:center;">
+          <span class="section-header__label" style="display:block;">Stay Informed</span>
+          <h2 style="margin-bottom:12px;">Get Health Tips in Your Inbox</h2>
+          <p style="color:var(--color-muted);margin-bottom:28px;max-width:480px;margin-left:auto;margin-right:auto;">Monthly wellness advice from our doctors. No spam, unsubscribe anytime.</p>
+          <form id="newsletter-form" style="display:flex;gap:12px;max-width:460px;margin:0 auto;flex-wrap:wrap;">
+            <input type="email" class="form-input" placeholder="you@email.com" required style="flex:1;min-width:200px;" />
+            <button type="submit" class="btn btn--primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo footer__logo--chip"><img class="footer__logo-img" src="assets/logo.jpg" alt="SkyHigh Medical Centre" /></a>
+        <p class="footer__tagline">Compassionate 24/7 healthcare in the heart of Magodo, Lagos.</p>
+        <div class="footer__hours">
+          <div class="footer__hours-row"><span>Monday – Sunday</span><span>Open 24 Hours</span></div>
+          <div class="footer__hours-row"><span>Emergency &amp; ICU</span><span>Always Open</span></div>
+          <div class="footer__hours-row"><span>Public Holidays</span><span>Open 24 Hours</span></div>
+        </div>
+      </div>
+      <div><h4 class="footer__col-title">Services</h4><ul class="footer__links">
+        <li><a href="services.html" class="footer__link">24/7 Emergency &amp; ICU</a></li>
+        <li><a href="services.html" class="footer__link">Maternity &amp; Antenatal</a></li>
+        <li><a href="services.html" class="footer__link">Obstetrics &amp; Gynaecology</a></li>
+        <li><a href="services.html" class="footer__link">General Surgery</a></li>
+        <li><a href="services.html" class="footer__link">Paediatrics &amp; Immunisation</a></li>
+        <li><a href="services.html" class="footer__link">Laboratory &amp; Telemedicine</a></li>
+      </ul></div>
+      <div><h4 class="footer__col-title">For Patients</h4><ul class="footer__links">
+        <li><a href="book-appointment.html" class="footer__link">Book Appointment</a></li>
+        <li><a href="patient-resources.html" class="footer__link">Patient Resources</a></li>
+        <li><a href="patient-resources.html#insurance" class="footer__link">HMO &amp; Billing</a></li>
+        <li><a href="patient-resources.html#faq" class="footer__link">FAQ</a></li>
+        <li><a href="contact.html" class="footer__link">Contact Us</a></li>
+      </ul></div>
+      <div><h4 class="footer__col-title">Find Us</h4><ul class="footer__links">
+        <li><span class="footer__link" style="cursor:default;color:rgba(255,255,255,0.6);">5b, Adekunle Banjo Avenue<br>Magodo Phase 2, Lagos State</span></li>
+        <li style="margin-top:8px;"><a href="tel:+2348100996560" class="footer__link">0810 099 6560</a></li>
+        <li><a href="tel:+2348027270167" class="footer__link">0802 727 0167</a></li>
+        <li><a href="mailto:skyhighmedicalcentre0@gmail.com" class="footer__link">skyhighmedicalcentre0@gmail.com</a></li>
+        <li style="margin-top:12px;"><a href="https://maps.google.com/?q=SkyHigh+Medical+Centre+Adekunle+Banjo+Avenue+Magodo+Phase+2+Lagos" target="_blank" rel="noopener" class="footer__link" style="color:var(--color-accent-light);">Get Directions →</a></li>
+      </ul></div>
+    </div>
+    <div class="footer__bottom"><p>© 2026 SkyHigh Medical Centre · Magodo, Lagos. All rights reserved.</p><div style="display:flex;gap:16px;"><a href="#" class="footer__link" style="font-size:13px;">Privacy</a><a href="#" class="footer__link" style="font-size:13px;">Terms</a><a href="#" class="footer__link" style="font-size:13px;">Patient Charter</a></div></div>
+  </div></footer>
+
+  <a href="https://wa.me/2348089749877" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
