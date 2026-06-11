@@ -1843,6 +1843,14 @@ img[data-fade].is-loaded { opacity: 1; }
   .about-teaser > div:first-child { height: 360px !important; }
 }
 @media (max-width: 768px) {
+  /* --- Even, tighter side gutters everywhere (kills the uneven side spaces) --- */
+  .container { padding-left: var(--space-4); padding-right: var(--space-4); }
+  .hero__content { padding-left: var(--space-4); padding-right: var(--space-4); }
+  .page-hero { padding-left: var(--space-4); padding-right: var(--space-4); }
+  .info-bar { padding-left: var(--space-4); padding-right: var(--space-4); }
+  .topbar__inner { padding-left: var(--space-4); padding-right: var(--space-4); }
+  .nav__inner { padding-left: var(--space-4); padding-right: var(--space-4); }
+
   .whatsapp-float { width: 60px; height: 60px; bottom: var(--space-5); right: var(--space-5); }
   .whatsapp-float svg { width: 30px; height: 30px; }
   .form-input, .form-select { min-height: 52px; }
@@ -1852,5 +1860,19 @@ img[data-fade].is-loaded { opacity: 1; }
   .nav__logo-img { height: 26px; }
   .nav__logo--chip { padding: 6px 12px; }
   .hero__title { letter-spacing: -0.02em; }
-  .about-teaser > div:first-child { height: 320px !important; }
+
+  /* About-teaser: image goes full-width, "19+" badge tucks into the corner
+     so there's no empty strip on the right. */
+  .about-teaser > div:first-child { height: 300px !important; }
+  .about-teaser > div:first-child > div:first-child {
+    width: 100% !important; height: 100% !important;
+  }
+  .about-teaser > div:first-child > div:last-child {
+    left: auto !important; right: 14px !important; bottom: 14px !important;
+    width: auto !important; max-width: 70% !important; padding: 16px 22px !important;
+  }
+}
+@media (max-width: 480px) {
+  .container, .hero__content, .page-hero, .info-bar { padding-left: 14px; padding-right: 14px; }
+  .about-teaser > div:first-child { height: 260px !important; }
 }
