@@ -394,8 +394,10 @@ blockquote {
   transition: color var(--transition-fast);
 }
 
-.mobile-nav__link:hover { color: var(--color-accent-light); }
-.mobile-nav__link--cta { color: var(--color-accent-light); }
+.mobile-nav__link:hover,
+.mobile-nav__link:active,
+.mobile-nav__link--cta:hover,
+.mobile-nav__link--cta:active { color: var(--color-accent-light); }
 
 /* --------------------------------------------------------------------------
    6. TOP UTILITY BAR (above nav — phone / hours / emergency)
